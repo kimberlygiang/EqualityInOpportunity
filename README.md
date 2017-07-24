@@ -1,2 +1,0 @@
-# EqualityInOpportunity
-# EqualityInOpportunity
