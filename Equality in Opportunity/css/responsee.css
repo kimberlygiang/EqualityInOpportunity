@@ -70,7 +70,7 @@ form {line-height:1.4em;}
 nav {
   display:block;
   width:100%;
-  background:#262626;
+  background-image:books.jpg;
 }
 .line:after,nav:after,.center:after,.box:after {
   clear:both;
