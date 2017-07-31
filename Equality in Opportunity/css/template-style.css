@@ -1,15 +1,19 @@
+@font-face {
+	font-family:"bebas";
+	src: url('BEBAS.ttf');
+}
+
 body {
-	background: url("../img/background.jpg") no-repeat fixed center center / 100% auto rgba(0, 0, 0, 0);
+	background: no-repeat fixed center center / 100% auto rgb(59, 61, 62);
 }
 nav {
-	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background: none repeat scroll 0 0 rgba(244, 196, 30, 0);
 	position: absolute;
 	top: 0;
 	z-index: 500;
 }
 
 .top-nav {
-	background: none repeat scroll 0 0 rgba(0, 30, 34, 0.85);
 }
 .top-nav ul {
 	padding: 0;
@@ -37,10 +41,9 @@ nav {
 	text-align: center;
 }
 .top-nav li a:hover, .top-nav li.active-item a, .top-nav .logo.active-item a:hover {
-	background: none repeat scroll 0 0 #00464f;
+	background: none repeat scroll rgb(165, 234, 219);
 }
 .top-nav li.logo a, .top-nav li.logo.active-item a, .top-nav .logo {
-	background: none repeat scroll 0 0 #2fcbe0;
 }
 nav ul li ul li {
 	text-align: left;
