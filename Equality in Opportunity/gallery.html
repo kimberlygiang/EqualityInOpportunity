@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<style>
-		.thick-green-border {
-    	border-color: black;
-    	border-width: 3px;
-    	border-style: solid;
-    	border-radius: 50%;
-  		}
+   <style>
+      .thick-green-border {
+      border-color: black;
+      border-width: 5px;
+      border-style: solid;
+      border-radius: 50%;
+      }
 
-		.smaller-image {
-    		width: 125px;
-    	}
-	</style>
+      .smaller-image {
+         width: 125px;
+      }
+
+      .resize-logo {
+         width: 55px;
+      }
+
+      .topleft {
+         position: absolute;
+         width: 200px;
+        z-index: 3 !important;
+        margin-left: 25px;
+        margin-top: 25px;
+      }
+
+
+   </style>
    
    <head>
       <meta charset="UTF-8">
@@ -32,9 +46,9 @@
    
    <body class="size-1140">
       <!-- TOP NAV WITH LOGO -->  
-      <header>
+      <header style="z-index: -1; position: relative;">
          <nav>
-            <div class="line">
+            <div class="top-nav-whole" style="z-index: -1; position: relative;">
                <div class="top-nav">              
                   <div class="logo hide-l">
                      <a href="../design/">DESIGN <br /><strong>THEME</strong></a>
@@ -52,7 +66,7 @@
                   </div>
                   <ul class="s-12 l-2">
                      <li class="logo hide-s hide-m">
-                        <a href="../design/">DESIGN <br /><strong>THEME</strong></a>
+                        <center><img class="resize-logo" src="equality_in_opportunity.jpg"></center>
                      </li>
                   </ul>
                   <div class="top-nav s-12 l-5">
@@ -60,14 +74,14 @@
                         <li><a href="../design/gallery.html">Gallery</a>
                         </li>
                         <li>
-                           <a>Company</a>			    
+                           <a>Company</a>           
                            <ul>
                               <li><a>Company 1</a>
                               </li>
                               <li><a>Company 2</a>
                               </li>
                               <li>
-                                 <a>Company 3</a>				  
+                                 <a>Company 3</a>             
                                  <ul>
                                     <li><a>Company 3-1</a>
                                     </li>
@@ -87,8 +101,9 @@
             </div>
          </nav>
       </header>
+      <img class="topleft" src="equality_in_opportunity.jpg" style="z-index: 1; position: absolute;">
       <section>
-         <div id="head">
+         <div id="head" style="position: relative;z-index: -5;">
             <div class="line">
                <h1>FINANCIAL AID</h1>
             </div>
@@ -127,9 +142,9 @@
                      </p>
                   </div>
                   <div class="s-12 m-6 l-3 margin-bottom">
-                     <center><img class="smaller-image thick-green-border" src="calculator.jpg"></center>
-                     <a href="https://fafsa.ed.gov/FAFSA/app/f4cForm?execution=e1s2&locale=en_EN"><h3>FAFSA4caster</h3></a>
-                     <p>FAFSA4caster will help you understand your options for paying for college. It will give you a rough estimate on how much financial aid you may be eligible to recieve from the government.
+                     <center><img class="smaller-image thick-green-border" src="collegeboard.jpg"></center>
+                     <a href="https://bigfuture.collegeboard.org/pay-for-college/financial-aid-101/how-to-complete-the-css-financial-aid-profile"><h3>CSS Profile</h3></a>
+                     <p>This is website will guide you through the steps of completing a CSS Profile.
                      </p>
                   </div>
                </div>
@@ -175,20 +190,20 @@
       <script type="text/javascript">
          jQuery(document).ready(function($) {  
            $("#owl-demo").owlCarousel({
-         	slideSpeed : 300,
-         	autoPlay : true,
-         	navigation : false,
-         	pagination : false,
-         	singleItem:true
+            slideSpeed : 300,
+            autoPlay : true,
+            navigation : false,
+            pagination : false,
+            singleItem:true
            });
            $("#owl-demo2").owlCarousel({
-         	slideSpeed : 300,
-         	autoPlay : true,
-         	navigation : false,
-         	pagination : true,
-         	singleItem:true
+            slideSpeed : 300,
+            autoPlay : true,
+            navigation : false,
+            pagination : true,
+            singleItem:true
            });
-         });	
+         });   
           
       </script> 
    </body>
