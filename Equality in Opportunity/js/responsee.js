@@ -101,7 +101,7 @@ jQuery(document).ready(function($) {
   var url = window.location.href;
   $('a').filter(function() {
     return this.href == url;
-  }).parent('li').addClass('active-item');
+  }).parent('li').addClass('');
   var url = window.location.href;
   $('.aside-nav a').filter(function() {
     return this.href == url;
